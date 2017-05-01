@@ -19,21 +19,5 @@ parts:
       - -DOPTION_ENABLE_IRC=on
       - -DENABLE_PYTHON=off
     source: https://github.com/weechat/weechat/archive/v1.7.1.tar.gz
-    # build-packages:
-      #- libgcrypt20-dev
-      #- libgpg-error-dev
-      #- zlib1g-dev
-      #- build-essential
-      #- automake
-      #- checkinstall
-        #  - libcurl4-gnutls-dev
-        #- openssl
-      #- libncurses5-dev
-      #- libgnutls28-dev
-      #- gettext
-      #- ca-certificates
-      #- libaspell-dev
-      #- python-dev
-      #- libperl-dev
-      #- libv8-dev
-      #- liblua5.3-dev
+    stage-packages:
+      - libcurl3-gnutls
