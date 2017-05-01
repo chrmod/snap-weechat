@@ -20,4 +20,4 @@ parts:
       - -DENABLE_PYTHON=off
     source: https://github.com/weechat/weechat/archive/v1.7.1.tar.gz
     stage-packages:
-      - libcurl3-gnutls
+      - libcurl3-gnutls:armhf
