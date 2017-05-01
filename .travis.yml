@@ -7,7 +7,7 @@ matrix:
   include:
   - os: linux
     dist: trusty
-    sudo: required # for dpkg --add-architecture locking
+    sudo: required
     env:
       - ARCH=armhf
 
@@ -17,7 +17,7 @@ script:
     "snapcraft --target-arch=${ARCH}"
 
 after_success:
-  - openssl aes-256-cbc -K $encrypted_eb13c6a37015_key -iv $encrypted_eb13c6a37015_iv
+  - openssl aes-256-cbc -K $encrypted_2d29d34bd5be_key -iv $encrypted_2d29d34bd5be_iv
     -in .snapcraft/travis_snapcraft.cfg
     -out .snapcraft/snapcraft.cfg -d
 
