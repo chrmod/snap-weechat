@@ -18,6 +18,7 @@ parts:
       - -DCMAKE_INSTALL_PREFIX=/usr
       - -DOPTION_ENABLE_IRC=on
       - -DENABLE_PYTHON=off
+      - -DENABLE_IRC=on
     source: https://github.com/weechat/weechat/archive/v1.7.1.tar.gz
     stage-packages:
       - libcurl3-gnutls:armhf
