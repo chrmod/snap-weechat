@@ -9,6 +9,9 @@ confinement: devmode
 
 apps:
   weechat:
+      environment:
+      LC_ALL: C.UTF-8
+      WEECHAT_EXTRA_LIBDIR: /snap/weechat-armhf/current/usr/lib/weechat
     command: weechat
 
 parts:
@@ -16,9 +19,9 @@ parts:
     plugin: x-cmake
     configflags:
       - -DCMAKE_INSTALL_PREFIX=/usr
-      - -DOPTION_ENABLE_IRC=on
       - -DENABLE_PYTHON=off
-      - -DENABLE_IRC=on
+      - -DENABLE_JAVACRIPT=off
+      - -DENABLE_ASPELL=off
     source: https://github.com/lheckemann/weechat.git
     source-type: git
     source-branch: libdir-env
