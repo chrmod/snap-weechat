@@ -9,7 +9,7 @@ confinement: devmode
 
 apps:
   weechat:
-      environment:
+    environment:
       LC_ALL: C.UTF-8
       WEECHAT_EXTRA_LIBDIR: /snap/weechat-armhf/current/usr/lib/weechat
     command: weechat
