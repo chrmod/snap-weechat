@@ -19,6 +19,8 @@ parts:
       - -DOPTION_ENABLE_IRC=on
       - -DENABLE_PYTHON=off
       - -DENABLE_IRC=on
-    source: https://github.com/weechat/weechat/archive/v1.7.1.tar.gz
+    source: https://github.com/lheckemann/weechat.git
+    source-type: git
+    source-branch: libdir-env
     stage-packages:
       - libcurl3-gnutls:armhf
