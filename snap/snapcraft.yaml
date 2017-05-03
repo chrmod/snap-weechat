@@ -20,7 +20,7 @@ parts:
     configflags:
       - -DCMAKE_INSTALL_PREFIX=/usr
       - -DENABLE_PYTHON=off
-      - -DENABLE_JAVACRIPT=off
+      - -DENABLE_JAVASCRIPT=off
       - -DENABLE_ASPELL=off
     source: https://github.com/lheckemann/weechat.git
     source-type: git
